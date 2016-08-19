@@ -20,7 +20,7 @@ public class LostApiClientImpl implements LostApiClient {
       LocationServices.FusedLocationApi = new FusedLocationProviderApiImpl(context);
     }
     if (LocationServices.GeofencingApi == null) {
-      LocationServices.GeofencingApi = new GeofencingApiImpl();
+      LocationServices.GeofencingApi = new GeofencingApiImpl(context);
     }
     if (LocationServices.SettingsApi == null) {
       LocationServices.SettingsApi = new SettingsApiImpl(context);
